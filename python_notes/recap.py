@@ -82,3 +82,74 @@ amount=20
 
 balance=amount+balance
 balance +=amount
+
+#\n is an ecaspe character \n will print the answer in a newline
+answer = input("What are you going to do today \n?")
+print(answer)
+
+#if else
+music = "classical"
+
+if music == "classical": #comparsion Operators
+    print("Oh no! It's classical music again.")
+elif music == "no music":
+    print("Ahh, peace and quiet")
+else: #doen't need a comparsion operator 
+    print("Nice and noisy.")
+    
+# comparsion is checking the if statements are True or Falese
+
+num=90
+num2=290
+
+if num > num2:
+    print(f"{num} is bigger")
+elif num2 >num:
+    print(f"{num2} is bigger")
+else:
+    print("Both are equal")
+    
+#logical operator and (both side must be true)
+place ="MCR"
+weather = "cloudy"
+
+if place == "MCR" and weather == "Sunny":
+    print("Check again")
+elif place == "MCR" and weather == "Rain":
+    print("Obvs")
+else:
+    print("wait, it isn't raning")
+    
+#logical operator or
+
+day = "saturday"
+
+if day == "saturday" or day == "sunday":
+    print("It's the weekend!")
+else:
+    print("When's the weekend?")
+
+#functions
+#print and input are functions
+#def means definie the function
+
+#Example of Function
+def light_switch():
+    print("who turned out the lights?")
+    
+    light_switch() #call the function
+    
+#Example of a Function with parameters
+def cash_withdrawal (amount, accnum):
+    print(f"Withdrawing {amount} from account {accnum}")
+    
+    cash_withdrawal(300, 50449921)
+    
+#Lists
+fav_songs = [
+    "Bring Me to Life - Evancesences",
+    "walk on water - Milk Inc",
+    "You stole the sun from my heart - Manic Street Preachers"
+]
+
+print(fav_songs)
