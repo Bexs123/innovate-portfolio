@@ -20,6 +20,8 @@ print(True) # Boolan
 print(False) # Boolan
 print(None) # - blank / null data (place holder)
 
+#Strings have methods that we can use to manipulate them, and properties are just information
+
 #Arithmetic Operators
 print(36+8) # Example of an addition - Answer will be 44
 print(15-5) #Example of a subtraction - Answer will be 10
@@ -32,9 +34,11 @@ print(13%1) #Example of a modulus% - Answer will  be 0 - Modulus shows the remai
 
 print(len(greeting)) # len counts the characters and whitespace
 
-print(greeting[1]) #output is e. Index starts at 0
+print(greeting[1]) #output is e. Index begins at 0
 
 print(greeting[-1]) #output the last character
+
+#Other Methods (lower(), capitalize(), count(), find(), replace(), and sstrip())
 
 #greeting = Object - .upper = method
 print(greeting.upper()) #changes lower case to upper case
@@ -43,15 +47,20 @@ print("HELLO".lower()) #changes upper case to lower case
 
 print("hello EVERYONE. THIS is innovate".capitalize()) #changes the first letter to capital
 
-print("This quick brown fox".count("o"))
+print("This quick brown fox".count("o"))#counts o - Answer is 2
 
-print("This quick brown fox  fox fox".count("fox"))
+print("This quick brown fox fox fox".count("fox"))#counts fox - Answer is 3
+print("This quick brown fox  fox  fox".count("fox  "))#counts fox - Answer is 2 because of the amount of whitespace inbetween each fox
 
-print("This quick brown fox".find("fox"))
+print("This quick brown fox".find("fox"))#find() in this example will find the word fox and the - Answer is 17
+#find() method finds the first occurrence of the specified value.
 
-print("The quick brown fox".replace("fox", "frog"))
+#Example of the find() method returing -1, it returns -1 because the value is not found.
+print("This quick brown fox".find("dog"))#Answer is -1
 
-print("    The quick brown fox       ".strip())
+print("The quick brown fox".replace("fox", "frog"))#In this example it will replace all the fox words to frog.
+
+print("    The quick brown fox       ".strip())#strip will strip leading and trailing whitespace
 
 print(random.random()) #Generates a random number between 0 and 1, inculding 0 only.
 
