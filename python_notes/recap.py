@@ -1,8 +1,8 @@
-import random
+import random #random is a library and it needs to be imported at the top of the code, because code reads and execuates from top to bottom
 
-# use comments to make notes about your code for yourself and so other developers can 
+# use comments to make notes about your code for yourself and for other developers
 # use a hash key at the start of the line for the comment
-# you can select the line and use the ctrl and forward slash key to make the line a comment
+# you can select the line(s) and use the ctrl and forward slash key to make the line(s) a comment
 
 print('this is my file for all my python notes')
 
@@ -11,17 +11,26 @@ greeting = "Hello World"
 
 print(greeting) #(greeting) will print out the assigned string in this example it will print out Hello World in the terminal
 
-print("this is a string to displaying characters") # this is a string
+print("this is a string to displaying characters") # this is a string, because it is an characters within quotes 
 print("536437") # this is still a string because of the quotes
-print(12358) # this is an integer because it doesn't have quotes
-print(36+8) # this is an example of an calculation 
+print(12358) # this is an integer because it doesn't have quotes - integer are whole numbers
 print(2.3) # floating point
 #Boolan (True or False) first letter of true or false needs to be capitial letter
 print(True) # Boolan
 print(False) # Boolan
 print(None) # - blank / null data (place holder)
 
-print(len(greeting)) # len counts the characters
+#Arithmetic Operators
+print(36+8) # Example of an addition - Answer will be 44
+print(15-5) #Example of a subtraction - Answer will be 10
+print(5*3)#Example of a multiplication - Answer will be 15
+print(2**2)#Example of power too or exponentiation Operator - Answer will be 4
+print(15/3)#Example of division - Answer will be 5
+print(13%1) #Example of a modulus% - Answer will  be 0 - Modulus shows the remainder of a division
+
+#Assignment operators to store values (=, *=, +=, /=, -=)
+
+print(len(greeting)) # len counts the characters and whitespace
 
 print(greeting[1]) #output is e. Index starts at 0
 
@@ -30,7 +39,7 @@ print(greeting[-1]) #output the last character
 #greeting = Object - .upper = method
 print(greeting.upper()) #changes lower case to upper case
 
-print("HELLO".lower())
+print("HELLO".lower()) #changes upper case to lower case
 
 print("hello EVERYONE. THIS is innovate".capitalize()) #changes the first letter to capital
 
