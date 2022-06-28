@@ -70,6 +70,7 @@ print("Hello my name is {} and I am {} years old".format(my_name, my_age))
 #f strings, new best practise
 print(f"Hello my name is {my_name} and I am {my_age} years old")
 
+#Arithmetic 
 print(49+2)
 print(172-72)
 print(78*3)
@@ -153,3 +154,49 @@ fav_songs = [
 ]
 
 print(fav_songs)
+
+# .append
+
+#.pop
+
+#For Loops
+#lists are iteratation
+
+for i in fav_songs:
+    print(i)
+
+for i in range(10):
+    print(i)
+    
+    #0 is the start num 10 is the stop and 1 is the step
+    for i in range(0, 10, 1):
+        print(i)
+        
+    for i in range(10, -1, -1):
+        print(i)
+        
+#While Loops
+
+#Example of inflatatly while loops
+# - To kill while loop ctrl and c inside the termainal
+# num = 0
+
+# while num != 10:
+#     print(num)
+    
+num = 0 
+
+while num < 10: # Less than companison 
+    num += 1
+    print(num)
+    
+# num 1 - My number
+# num 2 - comp number
+
+# compare them
+
+# my_num = 
+# comp_num = random.randint(1, 50)
+
+# while my_num != comp_num:
+    
