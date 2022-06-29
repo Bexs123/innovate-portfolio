@@ -20,8 +20,6 @@ print(True) # Boolan
 print(False) # Boolan
 print(None) # - blank / null data (place holder)
 
-#Strings have methods that we can use to manipulate them, and properties are just information
-
 #Arithmetic Operators
 print(36+8) # Example of an addition - Answer will be 44
 print(15-5) #Example of a subtraction - Answer will be 10
@@ -32,20 +30,22 @@ print(13%1) #Example of a modulus% - Answer will  be 0 - Modulus shows the remai
 
 #Assignment operators to store values (=, *=, +=, /=, -=)
 
+#Strings have methods that we can use to manipulate them, and properties are just information
+
 print(len(greeting)) # len counts the characters and whitespace
 
-print(greeting[1]) #output is e. Index begins at 0
+print(greeting[1]) # Finding the first character of the string (Index begains at 0) - Answer e
 
-print(greeting[-1]) #output the last character
+print(greeting[-1]) # Finding the last character of the string - use Index -1
 
-#Other Methods (lower(), capitalize(), count(), find(), replace(), and sstrip())
-
-#greeting = Object - .upper = method
+#greeting = Object - .upper = method (.Dot notation)
 print(greeting.upper()) #changes lower case to upper case
+
+#Other Methods (lower(), capitalize(), count(), find(), replace(), and strip()
 
 print("HELLO".lower()) #changes upper case to lower case
 
-print("hello EVERYONE. THIS is innovate".capitalize()) #changes the first letter to capital
+print("hello EVERYONE. THIS is innovate".capitalize()) # Changes the first character to capital - also it changes any upper case to lower case
 
 print("This quick brown fox".count("o"))#counts o - Answer is 2
 
