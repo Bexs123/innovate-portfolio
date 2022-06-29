@@ -88,14 +88,6 @@ print("Hello my name is {} and I am {} years old".format(my_name, my_age))
 #f strings, new best practise
 print(f"Hello my name is {my_name} and I am {my_age} years old")
 
-#Arithmetic 
-print(49+2)
-print(172-72)
-print(78*3)
-print(8**8)
-print(18/3)
-print(81%4)
-
 balance=100
 amount=20
 
