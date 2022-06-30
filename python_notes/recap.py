@@ -247,6 +247,9 @@ print(fav_songs)
 #For Loops
 #lists are iteratation
 
+# i is just a variable, it is just refering to the Index
+
+# The loop will sequences three times in this example because they are only three items in this example
 for i in fav_songs:
     print(i)
 
@@ -260,7 +263,13 @@ for i in range(10):
     for i in range(10, -1, -1):
         print(i)
         
+        
+        
 #While Loops
+
+# Infinite loops - is a sequence of instructions that, as written, will continue endlessly, unless an external intervention.
+
+# To stop the infinity loop in the terminal you will have to press ctrl + c but will have to press ctrl + c at least twice. Or you can use the bin icon in the terminal which will kill the terminal.
 
 #Example of inflatatly while loops
 # - To kill while loop ctrl and c inside the termainal
