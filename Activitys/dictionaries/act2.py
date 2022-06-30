@@ -10,7 +10,7 @@ countries = {
 
 # print(countries["United Kingdom"])
 
-#Use the .setdefault() method to add any 2 more countries and capitals of your choice
+#Used the .setdefault() method to add any 2 more countries and capitals of my choice
 
 countries.setdefault("New Zealand", "Wellington")
 countries.setdefault("New Jersey","Trenton")
