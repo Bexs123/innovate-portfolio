@@ -12,6 +12,8 @@ greeting = "Hello World"
 
 print(greeting) # (greeting) will print out the assigned string in this example it will print out Hello World in the terminal
 
+# Data types, properties and methods
+
 print("this is a string to displaying characters") # this is a string, because the characters are within quotes 
 print("536437") # this is still a string because of the quotes
 print(12358) # this is an integer because it doesn't have quotes - integer are whole numbers
@@ -19,26 +21,7 @@ print(2.3) # floating point
 # Boolan (True or False) first letter of true or false needs to be capitial letter
 print(True) # Boolan
 print(False) # Boolan
-print(None) # - blank / null data (place holder)
-
-# Arithmetic Operators
-
-print(36+8) # Example of an addition - Answer will be 44
-print(15-5) # Example of a subtraction - Answer will be 10
-print(5*3) # Example of a multiplication - Answer will be 15
-print(2**2) # Example of power too or exponentiation Operator - Answer will be 4
-print(15/3) # Example of division - Answer will be 5
-print(13%1) # Example of a modulus% - Answer will  be 0 - Modulus shows the remainder of a division
-
-# Order of Operation PEMDAS:
-# P - Parenthese
-# E - Exponent
-# M - Multiplication
-# D - Division
-# A - Addition
-# S - Subtraction
-
-# Assignment operators to store values (=, *=, +=, /=, -=)
+print(None) # - Nothing / null data (place holder)
 
 # Strings have methods that we can use to manipulate them, and properties are just information
 
@@ -72,6 +55,8 @@ print("The quick brown fox".replace("fox", "frog")) # In this example it will re
 
 print("    The quick brown fox       ".strip()) # strip will strip leading and trailing whitespace
 
+# Libraries
+
 print(random.random()) # Generates a random number between 0 and 1, inculding 0 only.
 
 print(random.uniform(1, 10)) # Generates a random number between 1 and 10, inclusive
@@ -85,6 +70,7 @@ print(random.randint(1, 10)) # Generates a random integer between 1 and 10, incl
 # from random import random, randint, uniform
 
 # Variables
+
 # In everyday life we can store items in boxes to retrieve later.
 # You can store all different types of items can be stored in the box at different times.
 # In coding you can give variables names so we can access things inside them.
@@ -115,6 +101,25 @@ print("Hello my name is {} and I am {} years old".format(my_name, my_age))
 
 # f strings, new best practise, f strings are much cleaner to write and read then using .format.
 print(f"Hello my name is {my_name} and I am {my_age} years old")
+
+# Assignment operators to store values (=, *=, +=, /=, -=)
+
+# Arithmetic Operators
+
+print(36+8) # Example of an addition - Answer will be 44
+print(15-5) # Example of a subtraction - Answer will be 10
+print(5*3) # Example of a multiplication - Answer will be 15
+print(2**2) # Example of power too or exponentiation Operator - Answer will be 4
+print(15/3) # Example of division - Answer will be 5
+print(13%1) # Example of a modulus% - Answer will  be 0 - Modulus shows the remainder of a division
+
+# Order of Operation PEMDAS:
+# P - Parenthese
+# E - Exponent
+# M - Multiplication
+# D - Division
+# A - Addition
+# S - Subtraction
 
 balance = 450
 amount = 45
@@ -167,7 +172,7 @@ elif num2 >num:
 else:
     print("Both are equal")
     
-# logical operator and (both side must be true)
+# logical operator and (both sides must be true)
 # These are conjunctions that you can use to combine more than one condition.
 # There are three logical operator:- and, or, and not.
 
@@ -177,6 +182,7 @@ else:
 
 # not Operator - This inverts the Boolean value of an expression. It converts True to False, and False to True
 
+# Example of an and operator
 place ="MCR"
 weather = "cloudy"
 
@@ -205,6 +211,7 @@ else:
     print("off to Innovate we go")
 
 # Functions
+
 # def is the keyword for defining a function.
 
 # Example of Function
@@ -222,6 +229,7 @@ cash_withdrawal(20, 53428091)
 cash_withdrawal(5000, 12345678)
 
 #Lists
+
 fav_songs = [
     "Bring Me to Life - Evancesences",
     "walk on water - Milk Inc",
@@ -243,15 +251,52 @@ fav_songs.append("Rule the World - Take That") # Adds to the end of the list
 fav_songs.pop() # .pop will remove from the end of the list
 print(fav_songs)
 
-# For Loops
-# lists are iterable
-# iteratation
+# Example of a .remove() method - removes the banana from the list
+fruits = ['apple', 'banana', 'cherry']
+print(fruits)
 
+fruits.remove("banana")
+print(fruits)
+
+# Example of reverse() method
+cars = ['Golf', 'Ferrari', 'BMW', 'Volo']
+print(cars)
+
+cars.reverse()
+print('Reversed List:', cars)
+
+# Example of .sort() - sorts the list ascending by default
+cars = ['Golf', 'Ferrari', 'BMW', 'Volo']
+print(cars)
+
+cars.sort()
+print(cars)
+
+# Eample of .extend method - adds the specified list element (or any iterable) to the end of the current list.
+
+cars = ['Golf', 'Ferrari', 'BMW', 'Volo']
+print(cars)
+fruits = ['apple', 'banana', 'cherry', 'orange']
+cars.extend(fruits)
+print(cars)
+
+# For Loops
+
+# You can call call the fav_songs list by using the index position
+print(fav_songs[0])
+print(fav_songs[1])
+print(fav_songs[2])
+# Using this method to call fav_song list is too long and it will get to messy especially when you have for example 100 items in the list.
+
+# lists are iterable
+# for is the keyword and it starts the loop
 # i is just a variable, it is just refering to the Index
 
 # The loop will sequences three times in this example because they are only three items in this example
+
+# i is just a variable name, i stands for index, which is widly used in for loops.
 for i in fav_songs:
-    print(i)
+    print(i) # The action taken is to print each fav_song as looping through the list, one at a time. i is updating everytime it reaches a new value in the sequences.
 
 for i in range(10):
     print(i)
@@ -262,34 +307,49 @@ for i in range(0, 10, 1):
         
 for i in range(10, -1, -1):
     print(i)
-        
-        
+    
+# for loops run a finite, or limited number of times.
         
 # While Loops
+
+# A while loop will run infinitely and do it's job until a condition is meet.
 
 # Infinite loops - is a sequence of instructions that, as written, will continue endlessly, unless an external intervention.
 
 # To stop the infinity loop in the terminal you will have to press ctrl + c but will have to press ctrl + c at least twice. Or you can use the bin icon in the terminal which will kill the terminal.
 
-# Example of inflatatly while loops
-# - To kill while loop ctrl and c inside the termainal
-# num = 0
+##############################################################
+#  # Example of inflatatly while loops                       #
+#   # - To kill while loop ctrl and c inside the termainal   #
+#                                                            #
+#   # num = 0                                                #
+#                                                            #
+#   # while num != 10:                                       #
+#   #     print(num)                                         #
+#                                                            #
+##############################################################  
 
-# while num != 10:
-#     print(num)
-    
 num = 0 
 
-while num < 10: # Less than companison 
+while num < 10: # Less than comparison operators
     num += 1
     print(num)
     
+# Random Number Generator
+
+# pseudocode - It us a detailed yet readable description of what a computer program or algorithm must do.
+
 # num 1 - My number
 # num 2 - comp number
-
 # compare them
+# While they don't match computer guesses again
+# When they match, Say "Well Done"
 
-# my_num = 
-# comp_num = random.randint(1, 50)
+my_num = 16
+comp_num = random.randint(1, 50)
 
-# while my_num != comp_num
+while my_num != comp_num:
+    print(f"The numbers {my_num} and {comp_num} do not match")
+    comp_num = random.randint(1, 50)
+    
+    print(f"The numbers {my_num} and {comp_num} match")
