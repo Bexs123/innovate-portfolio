@@ -174,7 +174,7 @@ print(even_nums) # Answer [2, 20, 4, 6, 8, 10, 8]
 # Tuples are immutable - (Can't be changed) tuples use parentheses brackets ()
 odd_nums = (1, 3, 5, 7, 9)
 print(odd_nums) # Answer (1, 3, 5, 7, 9)
-odd_nums.append(17)
+odd_nums.append(17) # Will not work on a tuple
 print(odd_nums) # Answer AttributeError: 'tuple' object has no attribute 'append'
 
 # Slice notation
@@ -203,6 +203,7 @@ print(fav_songs[2:4]) # ['walk on water - Milk Inc', 'You stole the sun from my 
 
 print(fav_songs[5]) # Answer November Rain - Guns N Roses
 
+# Palindrome Challenge
 test = "madam"
 
 if test == test[::-1]:
