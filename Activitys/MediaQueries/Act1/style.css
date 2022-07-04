@@ -1,0 +1,22 @@
+body {
+    background-color: lightgray;
+    color: black;
+}
+
+.mobile, .desktop {
+    display: none;
+}
+
+@media (orientation: landscape) {
+    .desktop {
+        display: inline-block;
+    }
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
