@@ -1,10 +1,14 @@
 
 class Character():
-    def __init__(self, name, character_name, age, height, color):
+    def __init__(self, real_name, super_name):
     
-        self.real_name = name
-        self.character_name = character_name
-        self.age = age
-        self.height = height
-        self.color = color
-    
+        self.name = real_name
+        self.super = super_name
+
+# setter
+    def set_power(self, hero_power):
+            self.power = hero_power
+            
+# getter
+    def get_power(self):
+        print(self.power)
