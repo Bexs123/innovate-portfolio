@@ -108,7 +108,6 @@ add_up()
 
 # There was no error message becasue it didn't find any errors to catch. The program did what we asked it to do.
 
-
 def add_up():
     num1 = input("What is the first number you'd like to add up? \n")
     num2 = input("What is the second number you'd like to add up? \n")
@@ -133,12 +132,13 @@ add_up()
 
 # Scope - global and local variables
 
-light = True # global variable outside of a function, exists everywhere in the code
+# This will not run because it will come up with Error: local variable 'light' referenced before assignment
+
+light = False # Global variable - outside of the function
 
 def light_switch():
-    global light
     if light:
-        print ("whoa! It's bright in here")
+        print("Whoa! It's bright in here")
         light = False
     else:
         print("who turned out the lights?")
@@ -146,7 +146,48 @@ def light_switch():
         
 light_switch()
 light_switch()
+
+# Using a Local variable inside of a function
+
+def light_switch():
+    light = False # Local variable
+    if light:
+        print("Whoa! It's bright in here")
+        light = False
+    else:
+        print("who turned out the lights?")
+        light = True
         
+light_switch()
+light_switch()
+
+# Answer:
+# who turned out the lights?
+# who turned out the lights?
+
+# Using a global variable
+
+light = False # Global variable - outside of the function
+
+def light_switch():
+    global light # global variable
+    if light: # the code thinks we talking about the local variable
+        print("Whoa! It's bright in here")
+        light = False # local variable - Only exist in the functions
+    else:
+        print("who turned out the lights?")
+        light = True
+        
+light_switch()
+light_switch()
+light_switch()
+light_switch()
+
+# who turned out the lights?
+# Whoa! It's bright in here
+# who turned out the lights?
+# Whoa! It's bright in here        
+
 # Differences between lists and tuples
 # Both are a collection of values
 
@@ -159,7 +200,6 @@ light_switch()
 
 # Lists can handle their values being changed, inserted or deleted as part of the program.
 # Tuples are stricter - they act more like constants, with less room for accidental errors, unlike lists.
-
 
 # List are Mutable - (can be changed) list use square brackets []
 even_nums = [2, 4, 6, 8, 10]
@@ -191,6 +231,7 @@ fav_songs = [
 ]
 
 # [start:stop:step]
+# [::] slices through the whole list, start to end, stopping by the default 1 
 print(fav_songs[1:2:1]) # Answer Walk on water - Milk Inc
 
 print(fav_songs[0:3:1]) # Answer Behind Blue Eyes -The Who
@@ -204,13 +245,28 @@ print(fav_songs[2:4]) # ['walk on water - Milk Inc', 'You stole the sun from my 
 print(fav_songs[5]) # Answer November Rain - Guns N Roses
 
 # Palindrome Challenge
+
+# Make a string variable
+# if it reads forward the same as backwards
+# if it does say 'Yes' if it doesn't say 'no'
+
 test = "madam"
 
 if test == test[::-1]:
     print(f"Yes! {test} is a palindrome")
 else:
     print("It is not a palindrome")
+    
+# Answer - Yes it is a palindrome
 
+test = "2134"
+
+if test == test[::-1]:
+    print(f"Yes! {test} is a palindrome")
+else:
+    print("It is not a palindrome")
+
+# Answer It is not a palindrome
 
 # while True
 
@@ -219,14 +275,15 @@ else:
 # Running this code is dangerous because you will have to kill your terminal to get it stop
 import random
 
-# this is a while loop that compares a variables and runs under a condition
+# this is a while loop that compares a variable and runs under a condition
 num = random.randint(1, 50)
+
+# if the number is odd, the while loop will never run
 
 while num%2==0:
     print("We like even numbers! Another")
 # If the number is odd, the while loop will never ever run
     print("Oh no! An odd number!")
-    
     
 # Always running
     while True:
@@ -238,4 +295,4 @@ while num%2==0:
         else:
             print("An odd number")
             break
-# this while loop will always initialise. It might go straight
+# this while loop will always initialize. It might go straight to the else/break but it will have started.S

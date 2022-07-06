@@ -1,3 +1,5 @@
+print('Python recap')
+
 import random # random is a library and it needs to be imported at the top of the code, because code reads and execuates from top to bottom
 
 # use comments to make notes about your code for yourself and for other developers
