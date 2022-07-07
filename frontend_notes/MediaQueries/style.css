@@ -13,7 +13,9 @@ body {
         color:yellow;
         background-color: black;
         text-align: center;
+/* Recommend to use percentages for margins and padding, so they stay relative in size for different devices */
         padding: 5%;
+/* Twice the default if on a portrait screen */
         font-size: 2em;
     }
 }
@@ -24,20 +26,24 @@ body {
         background-color: orange;
         text-align: center;
         padding: 5%;
+/* Four times the default size if viewing on a landscape screen */
         font-size: 4em;
     }
 }
 
+/* The default CSS for this is to hide whatever is in both span classes */
 .desktop, .mobile {
     display: none;
 }
 
+/*When in landscape mode, display the .desktop span */
 @media (orientation: landscape) {
     .desktop {
         display: inline-block;
     }
 }
 
+/* When in portrait mode, display the .mobile span */
 @media (orientation: portrait) {
     .mobile {
         display: inline-block;

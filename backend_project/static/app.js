@@ -1,4 +1,7 @@
-
+function darkMode(){
+    let element = document.body;
+    element.classList.toggle("dark-mode")
+}
 
 function changeText(id) {
     id.innerHTML = "you have changed this text with an 'onclick' event"

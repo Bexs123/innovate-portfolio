@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = './main.css')}}">
+    <script type="text/javascript" src="{{url_for('static', filename ='app.js')}}"></script>
     <title>JavaScript Events</title>
 </head>
 <body onload="checkCookies()">
@@ -13,7 +15,7 @@
     <div>
     <h1>JavaScript Events</h1>
     <div class="flex-container-h">
-        <button>Dark Mode</button>
+        <button onClick = "toggleDarkMode()"dark-mode"</button>
     </div>
     <h2>Innovate Coding</h2>
     <p id="intro-text">This is an interactive website for demonstrating a selection of events in JavaScript.</p>
