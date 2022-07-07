@@ -1,4 +1,4 @@
-#Notes
+# Notes
 # The int() is a built-in function, this is to convert, or cast, a string to an integer
 
 # While Loop
@@ -6,7 +6,7 @@ correct_choice = False
 while correct_choice == False:
 # Create a program with an input variable that encourages the user to enter a number into the terminal
     user_num = input('Please enter a number... \n')
-    try:
+    try: 
         print(int(user_num), 'is your number' ) # converts the string into an Int data type
         print(type(int(user_num)))# In the terminal it will show Int as the data type
  
