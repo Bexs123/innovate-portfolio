@@ -31,6 +31,9 @@ def admin():
     return render_template("admin.html")
 
 
-@my_view.route('/404')
+@my_view.route('/home')
+@my_view.route('/js')
+@my_view.route('/javascript')
+
 def about_redirect():
     return redirect(url_for("my_view.index"))

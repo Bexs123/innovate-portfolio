@@ -1,5 +1,15 @@
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = './main.css')}}">
+    <script type="text/javascript" src="{{url_for('static', filename ='app.js')}}"></script>
+    <title>JavaScript Events</title>
+</head>
 
+<body>
     <nav>
         <a href="{{url_for('my_view.index')}}">Home</a>
         <a href="{{url_for('my_view.page1')}}">1</a>
@@ -9,4 +19,8 @@
         <a href="{{url_for('my_view.page5')}}">5</a>
         <a href="{{url_for('my_view.admin')}}">admin</a>
     </nav>
+
+{% block content %}
     {% endblock %}
+</body>
+</html>
