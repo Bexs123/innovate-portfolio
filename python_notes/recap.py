@@ -1,4 +1,5 @@
 print('Python recap')
+print('this is my file for all my python recap notes')
 
 import random # random is a library and it needs to be imported at the top of the code, because code reads and execuates from top to bottom
 
@@ -7,15 +8,12 @@ import random # random is a library and it needs to be imported at the top of th
 # use a hash key at the start of the line for the comment
 # you can select the line(s) and use the ctrl and forward slash key to make the line(s) a comment
 
-print('this is my file for all my python notes')
-
 # variables in this example is greeting, = means it assign the variable to the string and the string is ("hello world")
 greeting = "Hello World"
 
 print(greeting) # (greeting) will print out the assigned string in this example it will print out Hello World in the terminal
 
 # Data types, properties and methods
-
 print("this is a string to displaying characters") # this is a string, because the characters are within quotes 
 print("536437") # this is still a string because of the quotes
 print(12358) # this is an integer because it doesn't have quotes - integer are whole numbers
@@ -26,18 +24,16 @@ print(False) # Boolan
 print(None) # - Nothing / null data (place holder)
 
 # Strings have methods that we can use to manipulate them, and properties are just information
-
 print(len(greeting)) # len counts the characters and whitespace
 
 print(greeting[1]) # Finding the first character of the string (Index begains at 0) - Answer e
 
 print(greeting[-1]) # Finding the last character of the string - use Index -1
 
-# greeting = Object - .upper = method (.Dot notation)
+# greeting = Object - .upper = method (Dot notation)
 print(greeting.upper()) # changes lower case to upper case
 
 # Other Methods (lower(), capitalize(), count(), find(), replace(), and strip()
-
 print("HELLO".lower()) # changes upper case to lower case
 
 print("hello EVERYONE. THIS is innovate".capitalize()) # Changes the first character to capital - also it changes any upper case to lower case
@@ -51,14 +47,13 @@ print("TheT quick brown fox".find("T")) # Answer is Index 0 because it is the fi
 print("The quick brown fox".find("fox")) # find() in this example will find the word fox and the - Answer is 16 (inculdeds whitespace)
 
 # Example of the find() method returing -1, it returns -1 because the value is not found.
-print("The quick brown fox".find("dog"))#Answer is -1
+print("The quick brown fox".find("dog"))# Answer is -1
 
 print("The quick brown fox".replace("fox", "frog")) # In this example it will replace all the fox words to frog.
 
 print("    The quick brown fox       ".strip()) # strip will strip leading and trailing whitespace
 
 # Libraries
-
 print(random.random()) # Generates a random number between 0 and 1, inculding 0 only.
 
 print(random.uniform(1, 10)) # Generates a random number between 1 and 10, inclusive
@@ -77,37 +72,55 @@ print(random.randint(1, 10)) # Generates a random integer between 1 and 10, incl
 # You can store all different types of items can be stored in the box at different times.
 # In coding you can give variables names so we can access things inside them.
 
+# When naming variables python uses snake_case
+
 my_name = "Boris"
 my_age = 21
 student = False
 
-print(my_name, my_age, student)
+print(my_name, my_age, student) # Answer Boris, 21, False
 
 # concatenate
+print("Hello my name is", my_name) # Answer Hello my name is Boris
+print("I am", my_age) # Answer I am 21
 
-print("Hello my name is", my_name)
-print("I am", my_age) #Answer I am 21
-
-print("Hello my name is " + my_name)
+print("Hello my name is " + my_name) # Hello my name is Boris
 print("I am" + my_age) # Answer - TypeError: can only concatenate str (not "int") to str
 # All the error means is that you can only concatenate or link strings together, not integer to strings
 
 # Concatenation only works on string data types
 
-# Legacy code, all this means that it is outdated, however it can still be used.
+# Legacy code, all this means that it is outdated, however it can still be read within the websites, but it is best practice to write code in the new format.
 # {} are used for placeholders, it just means that you can add data later.
 
-# .format() 
+# .format() is the older way of writing strings
 print("Hello my name is {} and I am {} years old".format(my_name, my_age))
 # Place the variables into the brackets after .format, the variables have to go in the correct order of the placeholders.
 
 # f strings, new best practise, f strings are much cleaner to write and read then using .format.
 print(f"Hello my name is {my_name} and I am {my_age} years old")
 
-# Assignment operators to store values (=, *=, +=, /=, -=)
+# Assignment operators (=, *=, +=, /=, -=) are used to assign values to variables
+# Example:- +=
+# x +=3 is the same as x = x +3
+
+# Example 1
+balance = 450
+amount = 45
+
+balance = amount + balance
+print(balance) # Answer 495
+
+# Example 2
+balance = 450
+amount = 45
+
+balance += amount
+print(balance) # Answer 495
+
+# Example 2 uses the DRY method, it shorter to write and you are not repearting yourself.
 
 # Arithmetic Operators
-
 print(36+8) # Example of an addition - Answer will be 44
 print(15-5) # Example of a subtraction - Answer will be 10
 print(5*3) # Example of a multiplication - Answer will be 15
@@ -123,16 +136,7 @@ print(13%1) # Example of a modulus% - Answer will  be 0 - Modulus shows the rema
 # A - Addition
 # S - Subtraction
 
-balance = 450
-amount = 45
-
-balance = amount + balance
-balance += amount
-
-print(balance)
-
 # Input() - allows whatever a user types into the terminal to be saved to a variable - in this case response
-
 input("What is your name?") # Saved in the random memory of the computer
 
 answer = input("What is your name?") # Save as an variable, whatever the user types will be saved to the variable answer.
@@ -142,6 +146,7 @@ answer = input("What are you going to do today? \n")
 print(answer)
 
 # if else
+# Example 1
 music = "classical"
 
 if music == "classical": # == is a comparison operators
@@ -150,11 +155,32 @@ elif music == "no music":
     print("Ahh, peace and quiet")
 else: # doesn't need comparison operator
     print("Nice and noisy.")
+# Answer - Oh no! It's classical music again.
     
+# Example 2
+music = "no music"
+
+if music == "classical": # == is a comparison operators
+    print("Oh no! It's classical music again.")
+elif music == "no music":
+    print("Ahh, peace and quiet")
+else: # doesn't need comparison operator
+    print("Nice and noisy.")
+# Answer - Ahh, peace and quiet
+
+# Example 3
+music = "pop"
+
+if music == "classical": # == is a comparison operators
+    print("Oh no! It's classical music again.")
+elif music == "no music":
+    print("Ahh, peace and quiet")
+else: # doesn't need comparison operator
+    print("Nice and noisy.")
+# Answer - Nice and noisy
+
 # comparison operators checks the if else statements are True or False
-
 # == Equal - this operator checks if the value on the left of the operator is equal to the one on the right
-
 # != Not equal - it checks if the value on the left of the operator is not equal to the one on the right.
 
 # Relational Operator - carries out the comparsion between operands
@@ -231,25 +257,24 @@ cash_withdrawal(20, 53428091)
 cash_withdrawal(5000, 12345678)
 
 #Lists
-
 fav_songs = [
     "Bring Me to Life - Evancesences",
     "walk on water - Milk Inc",
     "You stole the sun from my heart - Manic Street Preachers"
 ]
 
-print(fav_songs)
+print(fav_songs) # It will print all the fav_songs list
 print(fav_songs[2]) # It will only print out the item in the list at Index position 2
 # Answer "you stole the sun from mu heart - Manic Street Preachers" 
-print(len(fav_songs)) # Print out the number of items in the list - Answer is 3
+print(len(fav_songs)) # Print out the number of items in the list - Answer is 3 because there are three songs in the list.
 
 fav_songs[1] = "Left Outside Alone - Anastacia" # Replaces th list item at Index position 1 to the new list item.
 # Index 1 was "walk on Water - Milk Inc" it will become "Left outside Alone - Anastacia"
 
-# .append
+# .append() method
 fav_songs.append("Rule the World - Take That") # Adds to the end of the list
 
-# .pop
+# .pop() method
 fav_songs.pop() # .pop will remove from the end of the list
 print(fav_songs)
 
@@ -260,27 +285,33 @@ print(fruits)
 fruits.remove("banana")
 print(fruits)
 
-# Example of reverse() method
+# Example of reverse() method - Makes the last item in the list first and the first item last
 cars = ['Golf', 'Ferrari', 'BMW', 'Volo']
 print(cars)
+# Answer - ['Golf', 'Ferrari', 'BMW', 'Volo']
 
 cars.reverse()
 print('Reversed List:', cars)
+# Answer - Reversed List: ['Volo', 'BMW', 'Ferrari', 'Golf']
 
 # Example of .sort() - sorts the list ascending by default
 cars = ['Golf', 'Ferrari', 'BMW', 'Volo']
 print(cars)
+# Answer - ['Golf', 'Ferrari', 'BMW', 'Volo']
 
 cars.sort()
 print(cars)
+# Answer - ['BMW', 'Ferrari', 'Golf', 'Volo']
 
 # Eample of .extend method - adds the specified list element (or any iterable) to the end of the current list.
 
 cars = ['Golf', 'Ferrari', 'BMW', 'Volo']
 print(cars)
+# Answer - ['Golf', 'Ferrari', 'BMW', 'Volo']
 fruits = ['apple', 'banana', 'cherry', 'orange']
 cars.extend(fruits)
 print(cars)
+# Answer - ['Golf', 'Ferrari', 'BMW', 'Volo', 'apple', 'banana', 'cherry', 'orange']
 
 # For Loops
 
@@ -298,10 +329,12 @@ print(fav_songs[2])
 
 # i is just a variable name, i stands for index, which is widly used in for loops.
 for i in fav_songs:
-    print(i) # The action taken is to print each fav_song as looping through the list, one at a time. i is updating everytime it reaches a new value in the sequences.
+    print(i) 
+# The action taken is to print each fav_song as looping through the list, one at a time. i is updating everytime it reaches a new value in the sequences.
 
 for i in range(10):
     print(i)
+# Answer it will print 0 - 9
     
 # 0 is the start num 10 is the stop and 1 is the step
 for i in range(0, 10, 1):
@@ -336,9 +369,9 @@ num = 0
 while num < 10: # Less than comparison operators
     num += 1
     print(num)
+# Answer starts at 1 and ends with 10
     
 # Random Number Generator
-
 # pseudocode - It us a detailed yet readable description of what a computer program or algorithm must do.
 
 # num 1 - My number
