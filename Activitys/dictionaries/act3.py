@@ -30,7 +30,8 @@ fav_songs = [{
 
 print(fav_songs)
 
-fav_songs.append({ # .append method is to add a new dictionary to the current dictionaries
+# .append method is to add a new dictionary to the current dictionaries
+fav_songs.append({ 
     "artist":"Guns N Roses",
     "song_name":"November Rain",
     "genre":"Rock",
@@ -47,6 +48,6 @@ print(fav_songs)
 # fav_songs.pop()
 # fav_songs.pop(0)
 
-# Update
+# Update using the index position
 fav_songs[2].update({"song_name":"Won't Get Fooled Again"})
 print(fav_songs)
