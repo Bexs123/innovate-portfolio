@@ -1,4 +1,5 @@
 print('python level up')
+print('These are my Python Level Up notes and examples')
 
 # Converting data types 
 
@@ -23,14 +24,13 @@ print(type(float(54))) # Answer <class 'float'>
 print(str(23)) # Answer 23 (Integer)
 print(str(21.6)) # Answer 21.6 (Floating point)
 
-# Input takes from the user, it is always a string even if we type number and it can be limited to what we do with it.
+# Input is what the users writes. It is very limited to what we do with it because it will not support intergers.
 
 # Example without casting
 # It will produce an error, because you can not add int and str together without casting.
 balance = 300
 
 deposit = input("how much do you want to deposit? \n")
-
 balance += deposit
 
 print(f"you have {balance}") # TypeError: unsupported operand type(s) for +=: 'int' and 'str'
@@ -39,10 +39,12 @@ print(f"you have {balance}") # TypeError: unsupported operand type(s) for +=: 'i
 balance = 2500
 
 deposit = int(input("how much do you want to deposit? \n"))
-
 balance += deposit
 
 print(f"you have {balance}")
+# Answer - how much do you want to deposit? 
+# 50
+# you have 2550
 
 # Truthy and Falsy
 
@@ -62,11 +64,30 @@ else: # If the user enters a Falsy value, the else condition is met
     print("you did not submit a name")
     
 # Not operator 
-# - != operator - which means 'not equal to' - The 'not operator is similar
+# != operator - which means 'not equal to' - The 'not operator is similar
 
 print(not True) # Answer False
 print(not False) # Answer True
 
+# Example 1
+bool = False
+
+if bool != True:
+    print(False)
+else:
+    print(True)
+# Answer False
+    
+# Example 2
+bool = True
+
+if bool != True:
+    print(False)
+else:
+    print(True)
+# Answer True
+
+# Example 
 day = "Monday"
 bank_hol = True
 
@@ -74,6 +95,16 @@ if day == "saturday" or day == "sunday" or bank_hol: # bank_hol looks for a Trut
     print("Oh yes a day off")
 else:
     print("off to Innovate we go")
+# Answer Oh Yes a day off
+
+day = "monday"
+bank_hol = False
+
+if day == "saturday" or day == "sunday" or bank_hol: # bank_hol looks for a Truthy value
+    print("Oh yes a day off")
+else:
+    print("off to Innovate we go")
+# Answer off to Innovate we go
 
 # Example of a not operator
 allowed = ["Debbie", "Dean", "Joyce", "Mick"]
@@ -83,21 +114,12 @@ while name not in allowed:
     print("Your name isn't on the list")
     print("try again")
     name=input("What is your name")
-    
     print("You can come in")
         
-bool = False
-
-if bool != True:
-    print(False)
-else:
-    print(True) # Answer is False
-
 # Try/Except statements have very similar syntax to if/else statements
 # There to help you catch any errors without your program breaking
 
 deposit = int(input("How much do you want to deposit")) # This will cause an fatal error when the full code will stop, and to prevent fatal error you can use try and except.
-
 
 def add_up():
     num1 = input("What is the first number you'd like to add up? \n")
@@ -105,16 +127,14 @@ def add_up():
     print(num1 + num2)
 add_up()
 # input is always strings, it is not an arithmetic operator, it will concatenate the strings so example num1 = 5 and num2 150 Answe will be 5150.
-
 # There was no error message becasue it didn't find any errors to catch. The program did what we asked it to do.
 
 def add_up():
     num1 = input("What is the first number you'd like to add up? \n")
     num2 = input("What is the second number you'd like to add up? \n")
-    print(int(num1 + int(num2)))
+    print(int(num1) + int(num2))
 add_up()
-
-# Input num1 and num2 works however print(int(num1 + int(num2))) it will cause a fatal error and this is where you need to use a try and except
+# it will work if number values are inputed and not word values. Example 3 + 3 will work but three and three will cause a fatal error
 
 # Using the try and except
 def add_up():
@@ -250,22 +270,22 @@ print(fav_songs[5]) # Answer November Rain - Guns N Roses
 # if it reads forward the same as backwards
 # if it does say 'Yes' if it doesn't say 'no'
 
+# Example 1 
 test = "madam"
 
 if test == test[::-1]:
     print(f"Yes! {test} is a palindrome")
 else:
     print("It is not a palindrome")
-    
 # Answer - Yes it is a palindrome
 
+# Example 2
 test = "2134"
 
 if test == test[::-1]:
     print(f"Yes! {test} is a palindrome")
 else:
     print("It is not a palindrome")
-
 # Answer It is not a palindrome
 
 # while True
@@ -273,16 +293,15 @@ else:
 # while True:
 #     print("Run forever")
 # Running this code is dangerous because you will have to kill your terminal to get it stop
+
 import random
 
 # this is a while loop that compares a variable and runs under a condition
 num = random.randint(1, 50)
 
 # if the number is odd, the while loop will never run
-
 while num%2==0:
     print("We like even numbers! Another")
-# If the number is odd, the while loop will never ever run
     print("Oh no! An odd number!")
     
 # Always running
@@ -295,4 +314,4 @@ while num%2==0:
         else:
             print("An odd number")
             break
-# this while loop will always initialize. It might go straight to the else/break but it will have started.S
+# this while loop will always initialize. It might go straight to the else/break but it will have started.
