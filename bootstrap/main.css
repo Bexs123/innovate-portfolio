@@ -1,0 +1,14 @@
+/* my-nav class does not overwrite the bootstrap propertie because on the bootstrap it has the value !important at the end css line */
+.my-nav {
+    background-color: yellow;
+}
+
+/* So if you want to change any propety in bootstrap with your own custom properties you will need to use !important, this value is what overwtite other CSS properties. */
+.bg-light {
+    background-color: blueviolet !important;
+}
+
+/*The second !important will overwrite the first !important because css is cascading and it reads top to bottom*/
+.bg-light {
+    background-color: chartreuse !important;
+}

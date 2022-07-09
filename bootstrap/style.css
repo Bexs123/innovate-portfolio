@@ -5,43 +5,58 @@
     align-items: center;
 }
 
+/*Standard default web button*/
 .button {
     background-color: #dbdbdb;
     padding: 15px;
     border: 2px solid rgb(140, 140, 140);
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
 
+/*There is no user Interaction*/
 .button1 {
     background-color: #dbdbdb;
     padding: 15px;
-    border:2px solid #212121;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    border: 2px solid #212121;
 }
 
+/* Added hover  */
 .button2 {
     background-color: #dbdbdb;
     padding: 15px;
-    border:2px solid #212121;
+    border: 2px solid #212121;
     transition-duration: 0.5s;
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
 
 .button2:hover {
-        background-color: #0f7f17;
-        color: white;
-        border: 2px solid rgb(44, 44, 44);
-    }
-    
+    background-color: #0f7f17;
+    color: white;
+    border: 2px solid rgb(44, 44, 44);
+    padding: 15px;
+}
 
+/* added psudeo code active */
+.button3 {
+    background-color: #dbdbdb;
+    padding: 15px;
+    border: 2px solid #212121;
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px grey;
+}
 
+.button3:hover {
+    background-color: #0f7f17;
+    color: white;
+    border: 2px solid rgb(44, 44, 44);
+    cursor: pointer;
+}
 
+.button3:active {
+    box-shadow: 2px 1px grey;
+    transform: translateY(2);
+}
 
-
-
+/* Do not click button */
+/* This type of css will be used instead of deleting the whole button or in some cases the button may not be able to be deleted. */
 .button4 {
     background-color: rgb(255, 0, 0);
     padding: 15px;
