@@ -1,5 +1,106 @@
+/*wild card it will target everything*/
+/* *{box-sizing: border-box; padding: 0; margin: 0;} */
+
+/*body, it will target everything within the opening and closing tags*/
 body {
-    background: red;
+    background-color: blueviolet;
+    color: #dcdcdc;
     text-align: center;
 }
 
+/*any anchor element anywhere within the nav*/
+nav a {
+    color: red;
+    text-decoration: none;
+    font-size: 30px
+}
+
+/*Only anchor element direct parent is nav*/
+nav>a {
+    color: orange;
+    text-decoration: none;
+    font-size: 30px
+}
+
+/*you can use pseudo class selectors to assign values to properties specific to the state of the element*/
+a:hover {
+    color: brown;
+}
+
+/*heading element this is an <h1> element, it will only target the <h1> heading*/
+h1 {
+    background-color: hotpink;
+    font-size: 4rem;
+}
+
+/*heading element this is an <h2> element, if you have more then one <h2> heading it will target all <h2> elements*/
+h2 {
+    background-color: chartreuse;
+    font-size: 2rem;
+}
+
+/*Group the selectors together if you want to use the same styles and values */
+h1, h2 {
+    color: black;
+}
+
+/*Element sizing an example of using px - px can cause problems when making websites*/
+/* .content{
+    text-align: center;
+    width: 400px;
+} */
+
+/*An example of percent %, the parent of div is the body*/
+/* .content{
+    text-align: center;
+    width: 40%;
+} */
+
+/*View port is working from the browser*/
+/* .content{
+    text-align: center;
+    width: 40vw;
+} */
+
+/*An example of an Overflow hidden*/
+/* .content{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 700px;
+    width: 540px;
+    background-color: darkgray;
+    overflow: hidden;
+} */
+
+/*An example of an overflow scroll*/
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 700px;
+    width: 540px;
+    background-color: darkgray;
+    overflow: scroll;
+}
+
+
+
+/*p it will target all paragraphs elements unless you use a class or id*/
+p {
+    color: blue;
+    font-size: 36px;
+}
+
+/*an example of a paragraph being targeted by a class*/
+/* .par2 {
+    color: black;
+    font-size: 12px;
+    font-style: oblique;
+    font-weight: bolder;
+} */
+
+/*an example of id*/
+#footer {
+    background-color: black;
+}

@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--The viewport is the user's visible area of a web page. It varies with the device. It will vary on the type of device being used.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--title is shown on the tab of the webpage-->
     <title>My Page</title>
@@ -27,35 +28,58 @@
 
     <!--The img tag does not need a closing tag because it is a stand alone element-->
     <!--img and alt are attibrutes -->
-    <!--need to keep the file path as relative file path not absoulte-->
-    <!--alt means alternative, then add a description of the picture-->
+    <!--The file path should be set to the relative path and not absoulte file path-->
+    <!--alt means alternative, then add a description of the picture, this will help users to understand the picture if it became broken or doen't download and it is also useful and accessible for screen readers.-->
     <img src="img/download.png" alt="a picture of google logo">
 
     <!--nav contains block of navigation links-->
     <nav>
-        <!--This is a link to google and it has got a blank target which means it will open a new tab for the google page-->
-        <a href="https://www.google.com" target="_blank">Click here to visit Google</a>
+        <!--This is a link to google and it has got a blank target which means it will open a new tab for the google page, the blank target will stop the user from completing leaving your website-->
+        <a href="https://www.google.com" target="_blank">Google</a>
         <!--This link will take you to page2 of your website-->
         <a href="page2.html">Page 2</a>
+        <a href="https://www.google.com" target="_blank">Google</a>
     </nav>
+
+    <!--pre tag element represents preformatted text which is to be presented exactly as written in the HTML file. Pre will honor the text spaces, line breaks and tabs. It is displayed in a fixed-width font but can be changed in css.
+        pre can be used to display blocks of code -->
+<pre>with
+    pre.
+    I
+    can
+    write
+    like
+    this
+</pre>
+<p>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.google.com" target="_blank">Google</a>
+</p>
 
     <!--<p> is a paragraph tag-->
     <!--To do a content filer you can use Lorem Ipsum, for example in betwen the opening and closing <p> tag you can type lorem100 and it will give you 100 words in the pargraph, you can use any amount of words-->
+
+    <!--div tag is an HTML element which will block the content together. It should only be used when there is no other element is appropriate. Also it does nothing until it has been styled with CSS. -->
+    
+    <!--because the div is an block element it will push the other content either above or under the div block-->
+
+
+    <div class="content">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus inventore eum, laborum blanditiis velit
         eligendi animi laudantium ipsum enim odio explicabo aliquam natus accusamus repudiandae iure ipsa quas
         molestias. Corrupti quae sit magnam neque ut molestiae! Rerum ut facilis consequuntur eaque id, molestias
         pariatur quae tenetur natus? Aut ipsam officia hic sint vel esse modi sed obcaecati laudantium necessitatibus
         odio sunt praesentium doloremque explicabo reprehenderit assumenda molestiae perspiciatis veritatis aliquam
         quasi enim repellat expedita, ad velit. Tempore provident ut laboriosam officiis, rerum est minus ab quae
-        pariatur quo velit labore atque sit temporibus laborum culpa, quisquam tenetur. Vel, error ex.</p>
+        pariatur quo velit labore atque sit temporibus laborum culpa, quisquam tenetur. Vel, error ex.</p><br>
 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nesciunt atque distinctio porro, eos ex architecto
+    <p class="par2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nesciunt atque distinctio porro, eos ex architecto
         placeat, esse ad illo expedita dolorum dolorem velit sit debitis dolore hic voluptates in nobis quibusdam
         provident rem accusantium voluptas animi! Ex velit perspiciatis deserunt numquam labore voluptatibus possimus
         dolor neque iusto consequatur error molestiae sed, ipsa aliquid dicta corrupti eveniet nemo, fugit repellendus
         aspernatur. Eius culpa animi placeat alias praesentium dolorem ut atque voluptatem exercitationem repudiandae
         debitis dolore eum veritatis maiores neque maxime, quo nobis sint ducimus nemo! Cum dolor ad nostrum! Similique
-        quia quos rem ad placeat earum dicta minus beatae repellendus.</p>
+        quia quos rem ad placeat earum dicta minus beatae repellendus.</p><br>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores eaque ut dolor quisquam
         perspiciatis dolore vitae totam delectus unde architecto dicta, est eos laborum. Suscipit tempora perspiciatis
@@ -64,20 +88,28 @@
         accusamus praesentium laudantium, neque est ducimus delectus tenetur inventore nihil id itaque doloribus
         corporis vel dolores? In perspiciatis consectetur, pariatur voluptatum ratione ipsa! Placeat nisi alias dolores
         soluta eos animi accusamus earum vitae quam iusto. Optio doloribus ipsam molestias debitis ipsa quo
-        reprehenderit quis!</p>
+        reprehenderit quis!</p><br>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint perspiciatis deserunt architecto quis alias cumque
+    <!--example of how a div will react when placed within in the paragraph, it will move the content inside that div above onto a line of its own-->
         harum doloremque ipsum inventore distinctio aliquam, corrupti, mollitia totam quaerat, voluptatibus quasi.
         Maiores in repellendus rem rerum corporis, aliquam sapiente autem perferendis ad ab odit nobis, ipsa laudantium
         voluptas aperiam enim, possimus reprehenderit ipsam molestiae quis maxime laborum totam. Illo facere reiciendis,
         dolor accusamus maxime numquam, est aut repudiandae quam architecto ea recusandae animi corrupti praesentium
         facilis dicta laborum distinctio hic amet esse, sit alias culpa eum. Commodi officia delectus, ut beatae
-        perferendis, molestias unde rerum, minima inventore pariatur neque quae itaque magni! Beatae, dolorum?</p>
+        perferendis, molestias unde rerum, minima inventore pariatur neque quae itaque magni! Beatae, dolorum?</p><br>
+
+        <!--span tag is an inline container that allows you to group elements for styling, it does nothing until style with CSS.
+        span is very much like div but as where div is block-level element, span is an inline element. You can add id and or class to it so you can sccess it within CSS-->
+    <p>Lorem ipsum dolor sit Praesentium mollitia amet consectetur adipisicing elit. Officiis quae cum adipisci sapiente itaque omnis ex quis, soluta autem dolorem tempore aliquam repellendus distinctio voluptatum explicabo aperiam enim. Praesentium mollitia adipisci iste placeat, nostrum id ex vitae aliquid ab voluptas incidunt eaque nobis autem officiis, fugit ea sed accusamus ipsa.</p></div>
 
     <!--footer is used for copyright information, contact information and jump links. Jump Links can make you go back to the top of the website page without having to scroll back up-->
-    <footer>
-        <a href="#innovate">Back to top</a>
-    </footer>
+    <!-- <footer id="footer">
+        <a href="#innovate">Back to top</a> -->
+        <!--An Example of HTML Entities-->
+        <!-- &copy; Made in 2022 
+        &#169; still a copyright symbol
+    </footer> -->
 </body>
 
 </html>
