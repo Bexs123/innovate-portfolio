@@ -1,11 +1,25 @@
+/*Import from google fonts*/
+/*copy the font from import*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/*font face rules -upload a font to our own website used from DaFont.com*/
+@font-face {
+    font-family: HelloWorld;
+    src: url('./HelloWorld.otf');
+}
+
 /*wild card it will target everything*/
-/* *{box-sizing: border-box; padding: 0; margin: 0;} */
+*{box-sizing: border-box; padding: 0; margin: 0;
+    /*Applied the @font-face into the website*/
+font-family: 'HelloWorld', sans-serif;}
 
 /*body, it will target everything within the opening and closing tags*/
 body {
     background-color: blueviolet;
     color: #dcdcdc;
-    text-align: center;
+    /* text-align: center; */
+    /*Need to apply CSS rules to be able to use the import font*/
+    font-family: 'Righteous', cursive;
 }
 
 /*any anchor element anywhere within the nav*/
@@ -44,6 +58,16 @@ h1, h2 {
     color: black;
 }
 
+/*An example of float*/
+img {
+    width:30%;
+    float:left;
+    /*adding space between picure and text*/
+    /* padding: 20px; */
+    padding-right: 20px;
+    /* float: right; */
+}
+
 /*Element sizing an example of using px - px can cause problems when making websites*/
 /* .content{
     text-align: center;
@@ -74,7 +98,7 @@ h1, h2 {
 } */
 
 /*An example of an overflow scroll*/
-.content{
+/* .content{
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -82,7 +106,19 @@ h1, h2 {
     width: 540px;
     background-color: darkgray;
     overflow: scroll;
-}
+} */
+
+/*The Box Model*/
+/* .content{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 540px;
+    padding: 10px;
+    border: 20px green solid;
+    background-color: darkgray;
+} */
+
 
 
 
