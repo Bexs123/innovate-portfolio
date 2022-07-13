@@ -8,7 +8,32 @@
     display: flex;
     min-height: 100vh;
     flex-direction: row;
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /*x-axis*/
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap; */
+
+/* Use flex-flow if you are using flex-direction and flex-wrap */
+    /* flex-flow: row wrap; */
+
+    /*justify content*/
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+    /*This is the default setting*/
+    /* align-items: stretch; */
+
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+
+    /* align-items: center; */
+    /* justify-content: center; */
 }
+
 
 .box {
     color: white;
@@ -16,20 +41,57 @@
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
     padding: 15px;
-    /*
+    
     width: 400px;
-    */
+   
 }
 
 /* Colours for each box */
 
-.box1 { background: #eccc68; }
+/*Order*/
+/* .box1 { background: #eccc68; order: 3; }
 .box2 { background: #ff6348; }
 .box3 { background: #ff7f50; }
+.box4 { background: #ff4757; order: -1;}
+.box5 { background: #f1c40f; order: 1; }
+.box6 { background: #e67e22; }
+.box7 { background: #2ed573; order: 2; }
+.box8 { background: #1e90ff; }
+.box9 { background: #c56cf0; }
+.box10 { background: #18dcff; } */
+
+/*Example using align-self*/
+/* .box1 { background: #eccc68; align-self:flex-end}
+.box2 { background: #ff6348; align-self: center; }
+.box3 { background: #ff7f50; align-self: flex-start;}
 .box4 { background: #ff4757; }
 .box5 { background: #f1c40f; }
 .box6 { background: #e67e22; }
 .box7 { background: #2ed573; }
 .box8 { background: #1e90ff; }
 .box9 { background: #c56cf0; }
-.box10 { background: #18dcff; }
+.box10 { background: #18dcff; } */
+
+/*Example Flex Property - flex-grow*/
+/* .box1 { background: #eccc68; }
+.box2 { background: #ff6348; }
+.box3 { background: #ff7f50; }
+.box4 { background: #ff4757; flex-grow: 1; }
+.box5 { background: #f1c40f; }
+.box6 { background: #e67e22; }
+.box7 { background: #2ed573; }
+.box8 { background: #1e90ff; flex-grow: 2;}
+.box9 { background: #c56cf0; }
+.box10 { background: #18dcff; } */
+
+/*Example Flex Property - Flex-Shrink - Use the .box property with width 400px for this example, everything as the default 1 */
+.box1 { background: #eccc68; flex-shrink: 2;}
+.box2 { background: #ff6348; }
+.box3 { background: #ff7f50; }
+.box4 { background: #ff4757; }
+.box5 { background: #f1c40f; }
+/* .box6 { background: #e67e22; }
+.box7 { background: #2ed573; }
+.box8 { background: #1e90ff; }
+.box9 { background: #c56cf0; }
+.box10 { background: #18dcff; } */
