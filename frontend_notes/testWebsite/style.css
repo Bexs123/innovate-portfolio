@@ -1,3 +1,28 @@
+/* CSS is Cascading Style Sheets, it is the main language used to style websites. It is the visual representation of the content, this colour, margins, borders, backgrounds and position in the page.
+
+It can be used in three ways:-
+- Inline CSS
+- Internal Style Sheet
+- External Style Sheet */
+
+/* CSS Syntax
+Applying CSS to HTMl by using selectors to assign values ti properties.
+Example:-
+
+selector {
+    property:value;
+    property:value;
+}
+
+p {
+    color: purple;
+    font-size: 32px;
+}
+
+In the above example:- 
+p is the selector
+both color and font-size are the proprty and purple and 32px  is the value. */
+
 /*Import from google fonts*/
 /*copy the font from import*/
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
@@ -8,7 +33,7 @@
     src: url('./HelloWorld.otf');
 }
 
-/*wild card it will target everything*/
+/*wild card it will apply values to every part of our html*/
 *{box-sizing: border-box; padding: 0; margin: 0;
     /*Applied the @font-face into the website*/
 font-family: 'HelloWorld', sans-serif;}
@@ -53,7 +78,7 @@ h2 {
     font-size: 2rem;
 }
 
-/*Group the selectors together if you want to use the same styles and values */
+/*Group the selectors together if you want to use the same styles and values also you can still use them individually if needed to. */
 h1, h2 {
     color: black;
 }
@@ -61,6 +86,7 @@ h1, h2 {
 /*An example of float*/
 img {
     width:30%;
+    /*float is used to position and wrap elements*/
     float:left;
     /*adding space between picure and text*/
     /* padding: 20px; */
@@ -120,15 +146,13 @@ img {
 } */
 
 
-
-
 /*p it will target all paragraphs elements unless you use a class or id*/
 p {
     color: blue;
     font-size: 36px;
 }
 
-/*an example of a paragraph being targeted by a class*/
+/*an example of a paragraph being targeted by a class - This will only target that specify element only*/
 /* .par2 {
     color: black;
     font-size: 12px;
@@ -136,7 +160,18 @@ p {
     font-weight: bolder;
 } */
 
-/*an example of id*/
+/*an example of id - ID can be only applied one per page*/
 #footer {
     background-color: black;
 }
+
+/* Height and Width...
+You can set the sizes of any element to how you'd like it.
+
+height:auto; - the browser calaculates the necessary size
+height: 20px; - the element is set to 20px in this example
+height:20%; - the element is set to 20% of its parent container in this example.
+height:80vh; the height is determined relative to the size of the viewport.
+
+max-height, it stops the content from growing any larger
+min-height, sets the smallest size the element can be. */

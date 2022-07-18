@@ -34,21 +34,18 @@
     /* justify-content: center; */
 }
 
-
 .box {
     color: white;
     font-size: 100px;
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
     padding: 15px;
-    
-    width: 400px;
-   
+    width: 400px;   
 }
 
 /* Colours for each box */
 
-/*Order*/
+/*Order is used on the flex items, rather than the container*/
 /* .box1 { background: #eccc68; order: 3; }
 .box2 { background: #ff6348; }
 .box3 { background: #ff7f50; }

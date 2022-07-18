@@ -1,12 +1,12 @@
 from character import Character
 
-spidey = Character("Peter Parker", "Spiderman")
-spidey.set_power("Web-slinging")
-hulk = Character("Bruse Banner", "Hulk")
-hulk.set_power("smashing")
+wolfy = Character("James Logan Howlette", "wolverine")
+wolfy.set_power('Retractable adamantium claws')
+bat = Character('Bruce Wayne', 'Batman')
+bat.set_power('Genius-level intellect')
 
-print(f"{spidey.name} is actually the superhero {spidey.super} and his power {spidey.power}")
-print(f"{hulk.name} is actually the superhero {hulk.super} and his power {hulk.power}")
+print(f"{wolfy.name} is actually the superhero {wolfy.super} and his power {wolfy.power}")
+print(f"{bat.name} is actually the superhero {bat.super} and his power {bat.power}")
 
-spidey.get_power()
-hulk.get_power()
+wolfy.get_power()
+bat.get_power()

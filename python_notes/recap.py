@@ -26,9 +26,9 @@ print(None) # - Nothing / null data (place holder)
 # Strings have methods that we can use to manipulate them, and properties are just information
 print(len(greeting)) # len counts the characters and whitespace
 
-print(greeting[1]) # Finding the first character of the string (Index begains at 0) - Answer e
+print(greeting[1]) # Finds the first character of the string (Index begains at 0) - Answer e
 
-print(greeting[-1]) # Finding the last character of the string - use Index -1
+print(greeting[-1]) # Finds the last character of the string because it uses Index -1 - Answer d
 
 # greeting = Object - .upper = method (Dot notation)
 print(greeting.upper()) # changes lower case to upper case
@@ -65,6 +65,10 @@ print(random.randint(1, 10)) # Generates a random integer between 1 and 10, incl
 
 # another way of importing the libraries is:-
 # from random import random, randint, uniform
+# print(random())
+# print(uniform(1, 10))
+# print(randint(1, 10))
+# Both the same
 
 # Variables
 
@@ -121,12 +125,13 @@ print(balance) # Answer 495
 # Example 2 uses the DRY method, it shorter to write and you are not repearting yourself.
 
 # Arithmetic Operators
-print(36+8) # Example of an addition - Answer will be 44
-print(15-5) # Example of a subtraction - Answer will be 10
-print(5*3) # Example of a multiplication - Answer will be 15
-print(2**2) # Example of power too or exponentiation Operator - Answer will be 4
-print(15/3) # Example of division - Answer will be 5
-print(13%1) # Example of a modulus% - Answer will  be 0 - Modulus shows the remainder of a division
+print(36+8) # Example of an addition - Answer is 44
+print(15-5) # Example of a subtraction - Answer is 10
+print(5*3) # Example of a multiplication - Answer is 15
+print(2**2) # Example of power too or exponentiation Operator - Answer is 4
+print(15/3) # Example of division - Answer is 5
+print(13%1) # Example of a modulus% - Answer is 0 - Modulus shows the remainder of a division
+print(10%3) # Example of a modulus% - Answer is 1
 
 # Order of Operation PEMDAS:
 # P - Parenthese
@@ -271,11 +276,11 @@ print(len(fav_songs)) # Print out the number of items in the list - Answer is 3 
 fav_songs[1] = "Left Outside Alone - Anastacia" # Replaces th list item at Index position 1 to the new list item.
 # Index 1 was "walk on Water - Milk Inc" it will become "Left outside Alone - Anastacia"
 
-# .append() method
-fav_songs.append("Rule the World - Take That") # Adds to the end of the list
+# .append() method adds to the end of the list
+fav_songs.append("Rule the World - Take That")
 
-# .pop() method
-fav_songs.pop() # .pop will remove from the end of the list
+# .pop() method - it will remove from the end of the list
+fav_songs.pop()
 print(fav_songs)
 
 # Example of a .remove() method - removes the banana from the list
@@ -304,7 +309,6 @@ print(cars)
 # Answer - ['BMW', 'Ferrari', 'Golf', 'Volo']
 
 # Eample of .extend method - adds the specified list element (or any iterable) to the end of the current list.
-
 cars = ['Golf', 'Ferrari', 'BMW', 'Volo']
 print(cars)
 # Answer - ['Golf', 'Ferrari', 'BMW', 'Volo']
@@ -314,7 +318,6 @@ print(cars)
 # Answer - ['Golf', 'Ferrari', 'BMW', 'Volo', 'apple', 'banana', 'cherry', 'orange']
 
 # For Loops
-
 # You can call call the fav_songs list by using the index position
 print(fav_songs[0])
 print(fav_songs[1])

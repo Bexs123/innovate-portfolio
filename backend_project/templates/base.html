@@ -9,8 +9,16 @@
     <title>JavaScript Events</title>
 </head>
 
-<body>
-    <nav>
+
+    <body onload = "darkCheck(), checkCookies()">
+        <div class="flex-container-h">
+        <div>
+        <h1>JavaScript Events</h1>
+        <div class="flex-container-h">
+            <button onClick = "darkMode()">Dark  Mode</button>
+        </div>
+    
+    <div>
         <a href="{{url_for('my_view.index')}}">Home</a>
         <a href="{{url_for('my_view.page1')}}">1</a>
         <a href="{{url_for('my_view.page2')}}">2</a>
@@ -18,7 +26,7 @@
         <a href="{{url_for('my_view.page4')}}">4</a>
         <a href="{{url_for('my_view.page5')}}">5</a>
         <a href="{{url_for('my_view.admin')}}">admin</a>
-    </nav>
+    </div>
 
 {% block content %}
     {% endblock %}

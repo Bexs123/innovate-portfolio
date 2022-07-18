@@ -126,6 +126,11 @@ button {
 }
 
 .dark-mode {
-    background-color: rgb(0,0,0);
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-modeb {
+    background-color: darkslategray ;
 }
     

@@ -10,6 +10,10 @@ console.log(myName)
 const fullName = 'Rebbecca';
 console.log(fullName)
 
+// This will show an error because you cannot declare a new variable when you have already declared full name with const
+// fullName = "Rebbecca Jane"
+
+// When using the let function you can declare new variables
 myName = 'Bfoxy';
 console.log(myName)
 

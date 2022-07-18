@@ -13,9 +13,13 @@ body {
     }
     }
 
-@media (min-width: 900px) {
+@media (orientation: portrait) {
+    .mobile{
+        display: inline-block;
+    }
+
     body {
-        background-color: white;
-        color: black;
+        background-color: black;
+        color:aqua;
     }
 }

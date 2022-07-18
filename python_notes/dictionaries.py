@@ -8,7 +8,7 @@ print("This is my Python Notes and Examples for Dictionaries")
 # Example of List
 my_cat = ["Salem", "black", "sassy"]
 
-# Example of Dictionary - name, colour, mood are all keys, and the values are Salem, black, sassy
+# Example of Dictionary - name, colour, mood are all keys, and the values are Salem, black, sassy - key:value
 my_cat = {
           "name": "Salem", 
           "colour": "black",
@@ -49,7 +49,6 @@ print(my_cat["name"])
 # print(my_cat.get("name")) - Salem
 
 # You can make the output look a little bit cleaner by using the list() method
-
 print(list(my_dog.keys()))
 print(list(my_dog.values()))
 print(list(my_dog.items()))

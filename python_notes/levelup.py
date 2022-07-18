@@ -1,5 +1,17 @@
+from ast import operator
+from ossaudiodev import SNDCTL_COPR_RESET
+import types
+
+
 print('python level up')
 print('These are my Python Level Up notes and examples')
+
+# Expanding on python recap notes:-
+# Properties and Methods: - Converting data types
+# If/else - Truthy and Falsy - Not operator
+# Functions - Try/execpt - Scope
+# Lists - Tuples
+# Loops - While True - Break and continue
 
 # Converting data types 
 
@@ -8,7 +20,6 @@ print('These are my Python Level Up notes and examples')
 # str() - creates a string data type
 
 # The process of converting data types is known as casting
-
 print(int(5.4)) # Answer 5 - Converting floating point into int
 print(int("54")) # Answer 54
 print(int(5.9)) # Answer 5
@@ -16,10 +27,12 @@ print(int(5.9)) # Answer 5
 print(type(int("54"))) # Answer <class 'int'>
 
 print(int("hello world")) # Answer ValueError: invalid literal for int() with base 10: 'hello world'
+# The error happens because integers are whole number values only.
 
 print(float(54)) # Answer 54.0
 print(float("54")) # Answer 54.0
 print(type(float(54))) # Answer <class 'float'>
+print(float('Hello World')) # It will give an error message because a string is not a numerical value and it cannot be converted into a floating point. 
 
 print(str(23)) # Answer 23 (Integer)
 print(str(21.6)) # Answer 21.6 (Floating point)
@@ -153,7 +166,6 @@ add_up()
 # Scope - global and local variables
 
 # This will not run because it will come up with Error: local variable 'light' referenced before assignment
-
 light = False # Global variable - outside of the function
 
 def light_switch():
@@ -168,7 +180,6 @@ light_switch()
 light_switch()
 
 # Using a Local variable inside of a function
-
 def light_switch():
     light = False # Local variable
     if light:
@@ -186,7 +197,6 @@ light_switch()
 # who turned out the lights?
 
 # Using a global variable
-
 light = False # Global variable - outside of the function
 
 def light_switch():
@@ -198,15 +208,10 @@ def light_switch():
         print("who turned out the lights?")
         light = True
         
-light_switch()
-light_switch()
-light_switch()
-light_switch()
-
-# who turned out the lights?
-# Whoa! It's bright in here
-# who turned out the lights?
-# Whoa! It's bright in here        
+light_switch() # Answer - who turned out the lights?
+light_switch() # Answer - Whoa! It's bright in here
+light_switch() # Answer - who turned out the lights?
+light_switch() # Answer - Whoa! It's bright in here
 
 # Differences between lists and tuples
 # Both are a collection of values
@@ -239,7 +244,12 @@ print(odd_nums) # Answer AttributeError: 'tuple' object has no attribute 'append
 
 # Slice notation
 
-# Slicing lists is useful method for working with data
+# Slicing lists is useful method for working with data, it is basically a more in-depth way of using[index]
+
+# my_list[start:stop] - this is the start and stop index
+# my_list[start:] - It is the start index, and it slice until the end of list
+# my_list[:stop] - It will slice from the start of list, until it reaches the stop index
+# my_list[:] - It will copy the list
 
 fav_songs = [
     "Bring Me to Life - Evancesences",
